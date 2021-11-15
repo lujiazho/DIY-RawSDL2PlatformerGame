@@ -1,0 +1,597 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="源文件\src">
+      <UniqueIdentifier>{b240e064-dc1c-414a-854c-40f3c253b293}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\src\Core">
+      <UniqueIdentifier>{cb1af747-d3b2-42c4-931c-77f2979c00cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\src\Graphics">
+      <UniqueIdentifier>{36d8bdb9-9cf0-4e92-91bb-9d3479ed5a99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\src\Physics">
+      <UniqueIdentifier>{7511dcc8-a0fd-41e8-942f-c1e2bcc6d4c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\src\Object">
+      <UniqueIdentifier>{e1801cc3-8b94-41e8-b5be-0d05ccd3677f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\src\Characters">
+      <UniqueIdentifier>{d7b734d7-fb6e-4581-b9e6-130fa11f90fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\src\Animation">
+      <UniqueIdentifier>{78c78bab-9b8a-431a-b744-0de2dcd01bd6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\src\Inputs">
+      <UniqueIdentifier>{eca48eaf-a4be-43ad-9d22-b22abfa3e433}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\src\Timer">
+      <UniqueIdentifier>{129bcba0-2883-4a1f-b533-ac7fa9bdaf1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\src\Map">
+      <UniqueIdentifier>{99c60e26-f649-4e1e-911f-fa5cc967b26e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\src\Vendor">
+      <UniqueIdentifier>{883bc624-0325-43b5-8e3c-52492f388748}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\src\Vendor\TinyXML">
+      <UniqueIdentifier>{f2d616b3-264a-4829-8c6c-0734dfd0f33f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="资源文件\maps">
+      <UniqueIdentifier>{d6b0fd19-847c-4a47-a535-b5adebe95898}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\src\Camera">
+      <UniqueIdentifier>{17279f16-d98e-480e-aeb0-7146fa31e441}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="资源文件\background">
+      <UniqueIdentifier>{71c56f69-6083-4aaa-b6a6-da7939a039b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\src\Collision">
+      <UniqueIdentifier>{273aa8b6-0f15-4459-837a-a5d1f98cafc6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="资源文件\character">
+      <UniqueIdentifier>{ca94ccba-826a-4df7-bd4b-0c8e23f1b5a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="资源文件\character\warrior">
+      <UniqueIdentifier>{d81b271e-9963-4115-bacb-b50a564eca85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="资源文件\enemy">
+      <UniqueIdentifier>{0e079f86-544f-4428-bb69-26a482b2da22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="资源文件\enemy\tigerBeetle">
+      <UniqueIdentifier>{3ac737f2-d3b0-4a3f-8721-7871fe8176c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="资源文件\enemy\tigerBeetle\attack">
+      <UniqueIdentifier>{4015c4e3-4f3a-4e4b-98d4-1691342060e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="资源文件\enemy\tigerBeetle\die">
+      <UniqueIdentifier>{e52ab58c-8e3c-4ad0-9f4a-3ef527616c4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="资源文件\enemy\tigerBeetle\appear">
+      <UniqueIdentifier>{051d1f7e-934e-4dba-84fc-60a1ce2574c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="资源文件\enemy\tigerBeetle\idle">
+      <UniqueIdentifier>{ccdfe3f9-a9c8-40f1-8a2a-330f62266874}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\src\Factory">
+      <UniqueIdentifier>{3153cb50-1945-4851-aecb-80a1de5fe00a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\src\States">
+      <UniqueIdentifier>{f38bd3df-4ebd-4504-8ab2-267ca3849224}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\src\Condition">
+      <UniqueIdentifier>{d0af8a75-9836-4335-9029-753ea8c213f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="资源文件\enemy\tigerBeetle\get_hit">
+      <UniqueIdentifier>{e493d223-1a08-47eb-9dfb-01b5e1260daa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="资源文件\enemy\undead">
+      <UniqueIdentifier>{8d88899b-2821-455a-8ba0-6c39ff787376}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="资源文件\enemy\skeleton">
+      <UniqueIdentifier>{9d58b785-8472-4660-9d9d-6f2d384abda1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Engine.cpp">
+      <Filter>源文件\src\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureManager.cpp">
+      <Filter>源文件\src\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Warrior.cpp">
+      <Filter>源文件\src\Characters</Filter>
+    </ClCompile>
+    <ClCompile Include="Input.cpp">
+      <Filter>源文件\src\Inputs</Filter>
+    </ClCompile>
+    <ClCompile Include="Timer.cpp">
+      <Filter>源文件\src\Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="TileLayer.cpp">
+      <Filter>源文件\src\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="MapParser.cpp">
+      <Filter>源文件\src\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="Vendor\TinyXML\tinystr.cpp">
+      <Filter>源文件\src\Vendor\TinyXML</Filter>
+    </ClCompile>
+    <ClCompile Include="Vendor\TinyXML\tinyxml.cpp">
+      <Filter>源文件\src\Vendor\TinyXML</Filter>
+    </ClCompile>
+    <ClCompile Include="Vendor\TinyXML\tinyxmlerror.cpp">
+      <Filter>源文件\src\Vendor\TinyXML</Filter>
+    </ClCompile>
+    <ClCompile Include="Vendor\TinyXML\tinyxmlparser.cpp">
+      <Filter>源文件\src\Vendor\TinyXML</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>源文件\src\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionHandler.cpp">
+      <Filter>源文件\src\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="SpriteAnimation.cpp">
+      <Filter>源文件\src\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="SeqAnimation.cpp">
+      <Filter>源文件\src\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy.cpp">
+      <Filter>源文件\src\Characters</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectFactory.cpp">
+      <Filter>源文件\src\Factory</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu.cpp">
+      <Filter>源文件\src\States</Filter>
+    </ClCompile>
+    <ClCompile Include="Play.cpp">
+      <Filter>源文件\src\States</Filter>
+    </ClCompile>
+    <ClCompile Include="SpriteEnemy.cpp">
+      <Filter>源文件\src\Characters</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Engine.h">
+      <Filter>源文件\src\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureManager.h">
+      <Filter>源文件\src\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector2D.h">
+      <Filter>源文件\src\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Transform.h">
+      <Filter>源文件\src\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="IObject.h">
+      <Filter>源文件\src\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>源文件\src\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Character.h">
+      <Filter>源文件\src\Characters</Filter>
+    </ClInclude>
+    <ClInclude Include="Warrior.h">
+      <Filter>源文件\src\Characters</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation.h">
+      <Filter>源文件\src\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="RigidBody.h">
+      <Filter>源文件\src\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Input.h">
+      <Filter>源文件\src\Inputs</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.h">
+      <Filter>源文件\src\Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="Layer.h">
+      <Filter>源文件\src\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="GameMap.h">
+      <Filter>源文件\src\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="TileLayer.h">
+      <Filter>源文件\src\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="MapParser.h">
+      <Filter>源文件\src\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="Vendor\TinyXML\tinystr.h">
+      <Filter>源文件\src\Vendor\TinyXML</Filter>
+    </ClInclude>
+    <ClInclude Include="Vendor\TinyXML\tinyxml.h">
+      <Filter>源文件\src\Vendor\TinyXML</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>源文件\src\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Point.h">
+      <Filter>源文件\src\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionHandler.h">
+      <Filter>源文件\src\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Collider.h">
+      <Filter>源文件\src\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="SpriteAnimation.h">
+      <Filter>源文件\src\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="SeqAnimation.h">
+      <Filter>源文件\src\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy.h">
+      <Filter>源文件\src\Characters</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectFactory.h">
+      <Filter>源文件\src\Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="GameState.h">
+      <Filter>源文件\src\States</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu.h">
+      <Filter>源文件\src\States</Filter>
+    </ClInclude>
+    <ClInclude Include="Play.h">
+      <Filter>源文件\src\States</Filter>
+    </ClInclude>
+    <ClInclude Include="Condition.h">
+      <Filter>源文件\src\Condition</Filter>
+    </ClInclude>
+    <ClInclude Include="SpriteEnemy.h">
+      <Filter>源文件\src\Characters</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="assets\tree.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="assets\Idle.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="assets\Run.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="assets\NightBorne.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="assets\maps\ground.png">
+      <Filter>资源文件\maps</Filter>
+    </Image>
+    <Image Include="assets\maps\plants.png">
+      <Filter>资源文件\maps</Filter>
+    </Image>
+    <Image Include="assets\maps\tree.png">
+      <Filter>资源文件\maps</Filter>
+    </Image>
+    <Image Include="assets\bg_solid_colors.png">
+      <Filter>资源文件\background</Filter>
+    </Image>
+    <Image Include="assets\bg1.jpg">
+      <Filter>资源文件\background</Filter>
+    </Image>
+    <Image Include="assets\Jump.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="assets\Fall.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="assets\bg2.jpg">
+      <Filter>资源文件\background</Filter>
+    </Image>
+    <Image Include="assets\character\Warrior\Individual Sprite\Run\run.png">
+      <Filter>资源文件\character\warrior</Filter>
+    </Image>
+    <Image Include="assets\character\Warrior\Individual Sprite\Jump\jump.png">
+      <Filter>资源文件\character\warrior</Filter>
+    </Image>
+    <Image Include="assets\character\Warrior\Individual Sprite\idle\idle.png">
+      <Filter>资源文件\character\warrior</Filter>
+    </Image>
+    <Image Include="assets\character\Warrior\Individual Sprite\Fall\fall.png">
+      <Filter>资源文件\character\warrior</Filter>
+    </Image>
+    <Image Include="assets\character\Warrior\Individual Sprite\Attack\attack.png">
+      <Filter>资源文件\character\warrior</Filter>
+    </Image>
+    <Image Include="assets\character\Warrior\Individual Sprite\Crouch\crouch.png">
+      <Filter>资源文件\character\warrior</Filter>
+    </Image>
+    <Image Include="assets\enemies\tigerBeetle\attack\tiger_beetle_larva-04_attack_0.png">
+      <Filter>资源文件\enemy\tigerBeetle\attack</Filter>
+    </Image>
+    <Image Include="assets\enemies\tigerBeetle\attack\tiger_beetle_larva-04_attack_1.png">
+      <Filter>资源文件\enemy\tigerBeetle\attack</Filter>
+    </Image>
+    <Image Include="assets\enemies\tigerBeetle\attack\tiger_beetle_larva-04_attack_2.png">
+      <Filter>资源文件\enemy\tigerBeetle\attack</Filter>
+    </Image>
+    <Image Include="assets\enemies\tigerBeetle\attack\tiger_beetle_larva-04_attack_3.png">
+      <Filter>资源文件\enemy\tigerBeetle\attack</Filter>
+    </Image>
+    <Image Include="assets\enemies\tigerBeetle\attack\tiger_beetle_larva-04_attack_4.png">
+      <Filter>资源文件\enemy\tigerBeetle\attack</Filter>
+    </Image>
+    <Image Include="assets\enemies\tigerBeetle\attack\tiger_beetle_larva-04_attack_5.png">
+      <Filter>资源文件\enemy\tigerBeetle\attack</Filter>
+    </Image>
+    <Image Include="assets\enemies\tigerBeetle\attack\tiger_beetle_larva-04_attack_6.png">
+      <Filter>资源文件\enemy\tigerBeetle\attack</Filter>
+    </Image>
+    <Image Include="assets\enemies\tigerBeetle\attack\tiger_beetle_larva-04_attack_7.png">
+      <Filter>资源文件\enemy\tigerBeetle\attack</Filter>
+    </Image>
+    <Image Include="assets\enemies\tigerBeetle\attack\tiger_beetle_larva-04_attack_8.png">
+      <Filter>资源文件\enemy\tigerBeetle\attack</Filter>
+    </Image>
+    <Image Include="assets\enemies\tigerBeetle\die\tiger_beetle_larva-07_death_00.png">
+      <Filter>资源文件\enemy\tigerBeetle\die</Filter>
+    </Image>
+    <Image Include="assets\enemies\tigerBeetle\die\tiger_beetle_larva-07_death_01.png">
+      <Filter>资源文件\enemy\tigerBeetle\die</Filter>
+    </Image>
+    <Image Include="assets\enemies\tigerBeetle\die\tiger_beetle_larva-07_death_02.png">
+      <Filter>资源文件\enemy\tigerBeetle\die</Filter>
+    </Image>
+    <Image Include="assets\enemies\tigerBeetle\die\tiger_beetle_larva-07_death_03.png">
+      <Filter>资源文件\enemy\tigerBeetle\die</Filter>
+    </Image>
+    <Image Include="assets\enemies\tigerBeetle\die\tiger_beetle_larva-07_death_04.png">
+      <Filter>资源文件\enemy\tigerBeetle\die</Filter>
+    </Image>
+    <Image Include="assets\enemies\tigerBeetle\die\tiger_beetle_larva-07_death_05.png">
+      <Filter>资源文件\enemy\tigerBeetle\die</Filter>
+    </Image>
+    <Image Include="assets\enemies\tigerBeetle\die\tiger_beetle_larva-07_death_06.png">
+      <Filter>资源文件\enemy\tigerBeetle\die</Filter>
+    </Image>
+    <Image Include="assets\enemies\tigerBeetle\die\tiger_beetle_larva-07_death_07.png">
+      <Filter>资源文件\enemy\tigerBeetle\die</Filter>
+    </Image>
+    <Image Include="assets\enemies\tigerBeetle\die\tiger_beetle_larva-07_death_08.png">
+      <Filter>资源文件\enemy\tigerBeetle\die</Filter>
+    </Image>
+    <Image Include="assets\enemies\tigerBeetle\die\tiger_beetle_larva-07_death_09.png">
+      <Filter>资源文件\enemy\tigerBeetle\die</Filter>
+    </Image>
+    <Image Include="assets\enemies\tigerBeetle\die\tiger_beetle_larva-07_death_10.png">
+      <Filter>资源文件\enemy\tigerBeetle\die</Filter>
+    </Image>
+    <Image Include="assets\enemies\tigerBeetle\emerge\tiger_beetle_larva-02_emerge_00.png">
+      <Filter>资源文件\enemy\tigerBeetle\appear</Filter>
+    </Image>
+    <Image Include="assets\enemies\tigerBeetle\emerge\tiger_beetle_larva-02_emerge_01.png">
+      <Filter>资源文件\enemy\tigerBeetle\appear</Filter>
+    </Image>
+    <Image Include="assets\enemies\tigerBeetle\emerge\tiger_beetle_larva-02_emerge_02.png">
+      <Filter>资源文件\enemy\tigerBeetle\appear</Filter>
+    </Image>
+    <Image Include="assets\enemies\tigerBeetle\emerge\tiger_beetle_larva-02_emerge_03.png">
+      <Filter>资源文件\enemy\tigerBeetle\appear</Filter>
+    </Image>
+    <Image Include="assets\enemies\tigerBeetle\emerge\tiger_beetle_larva-02_emerge_04.png">
+      <Filter>资源文件\enemy\tigerBeetle\appear</Filter>
+    </Image>
+    <Image Include="assets\enemies\tigerBeetle\emerge\tiger_beetle_larva-02_emerge_05.png">
+      <Filter>资源文件\enemy\tigerBeetle\appear</Filter>
+    </Image>
+    <Image Include="assets\enemies\tigerBeetle\emerge\tiger_beetle_larva-02_emerge_06.png">
+      <Filter>资源文件\enemy\tigerBeetle\appear</Filter>
+    </Image>
+    <Image Include="assets\enemies\tigerBeetle\emerge\tiger_beetle_larva-02_emerge_07.png">
+      <Filter>资源文件\enemy\tigerBeetle\appear</Filter>
+    </Image>
+    <Image Include="assets\enemies\tigerBeetle\emerge\tiger_beetle_larva-02_emerge_08.png">
+      <Filter>资源文件\enemy\tigerBeetle\appear</Filter>
+    </Image>
+    <Image Include="assets\enemies\tigerBeetle\emerge\tiger_beetle_larva-02_emerge_09.png">
+      <Filter>资源文件\enemy\tigerBeetle\appear</Filter>
+    </Image>
+    <Image Include="assets\enemies\tigerBeetle\emerge\tiger_beetle_larva-02_emerge_10.png">
+      <Filter>资源文件\enemy\tigerBeetle\appear</Filter>
+    </Image>
+    <Image Include="assets\enemies\tigerBeetle\idle\tiger_beetle_larva-03_idle_out_00.png">
+      <Filter>资源文件\enemy\tigerBeetle\idle</Filter>
+    </Image>
+    <Image Include="assets\enemies\tigerBeetle\idle\tiger_beetle_larva-03_idle_out_01.png">
+      <Filter>资源文件\enemy\tigerBeetle\idle</Filter>
+    </Image>
+    <Image Include="assets\enemies\tigerBeetle\idle\tiger_beetle_larva-03_idle_out_02.png">
+      <Filter>资源文件\enemy\tigerBeetle\idle</Filter>
+    </Image>
+    <Image Include="assets\enemies\tigerBeetle\idle\tiger_beetle_larva-03_idle_out_03.png">
+      <Filter>资源文件\enemy\tigerBeetle\idle</Filter>
+    </Image>
+    <Image Include="assets\enemies\tigerBeetle\idle\tiger_beetle_larva-03_idle_out_04.png">
+      <Filter>资源文件\enemy\tigerBeetle\idle</Filter>
+    </Image>
+    <Image Include="assets\enemies\tigerBeetle\idle\tiger_beetle_larva-03_idle_out_05.png">
+      <Filter>资源文件\enemy\tigerBeetle\idle</Filter>
+    </Image>
+    <Image Include="assets\enemies\tigerBeetle\idle\tiger_beetle_larva-03_idle_out_06.png">
+      <Filter>资源文件\enemy\tigerBeetle\idle</Filter>
+    </Image>
+    <Image Include="assets\enemies\tigerBeetle\idle\tiger_beetle_larva-03_idle_out_07.png">
+      <Filter>资源文件\enemy\tigerBeetle\idle</Filter>
+    </Image>
+    <Image Include="assets\enemies\tigerBeetle\idle\tiger_beetle_larva-03_idle_out_08.png">
+      <Filter>资源文件\enemy\tigerBeetle\idle</Filter>
+    </Image>
+    <Image Include="assets\enemies\tigerBeetle\idle\tiger_beetle_larva-03_idle_out_09.png">
+      <Filter>资源文件\enemy\tigerBeetle\idle</Filter>
+    </Image>
+    <Image Include="assets\enemies\tigerBeetle\idle\tiger_beetle_larva-03_idle_out_10.png">
+      <Filter>资源文件\enemy\tigerBeetle\idle</Filter>
+    </Image>
+    <Image Include="assets\enemies\tigerBeetle\idle\tiger_beetle_larva-03_idle_out_11.png">
+      <Filter>资源文件\enemy\tigerBeetle\idle</Filter>
+    </Image>
+    <Image Include="assets\enemies\tigerBeetle\idle\tiger_beetle_larva-03_idle_out_12.png">
+      <Filter>资源文件\enemy\tigerBeetle\idle</Filter>
+    </Image>
+    <Image Include="assets\enemies\tigerBeetle\idle\tiger_beetle_larva-03_idle_out_13.png">
+      <Filter>资源文件\enemy\tigerBeetle\idle</Filter>
+    </Image>
+    <Image Include="assets\enemies\tigerBeetle\idle\tiger_beetle_larva-03_idle_out_14.png">
+      <Filter>资源文件\enemy\tigerBeetle\idle</Filter>
+    </Image>
+    <Image Include="assets\enemies\tigerBeetle\idle\tiger_beetle_larva-03_idle_out_15.png">
+      <Filter>资源文件\enemy\tigerBeetle\idle</Filter>
+    </Image>
+    <Image Include="assets\enemies\tigerBeetle\idle\tiger_beetle_larva-03_idle_out_16.png">
+      <Filter>资源文件\enemy\tigerBeetle\idle</Filter>
+    </Image>
+    <Image Include="assets\enemies\tigerBeetle\idle\tiger_beetle_larva-03_idle_out_17.png">
+      <Filter>资源文件\enemy\tigerBeetle\idle</Filter>
+    </Image>
+    <Image Include="assets\enemies\tigerBeetle\idle\tiger_beetle_larva-03_idle_out_18.png">
+      <Filter>资源文件\enemy\tigerBeetle\idle</Filter>
+    </Image>
+    <Image Include="assets\enemies\tigerBeetle\idle\tiger_beetle_larva-03_idle_out_19.png">
+      <Filter>资源文件\enemy\tigerBeetle\idle</Filter>
+    </Image>
+    <Image Include="assets\enemies\tigerBeetle\idle\tiger_beetle_larva-03_idle_out_20.png">
+      <Filter>资源文件\enemy\tigerBeetle\idle</Filter>
+    </Image>
+    <Image Include="assets\enemies\tigerBeetle\idle\tiger_beetle_larva-03_idle_out_21.png">
+      <Filter>资源文件\enemy\tigerBeetle\idle</Filter>
+    </Image>
+    <Image Include="assets\enemies\tigerBeetle\idle\tiger_beetle_larva-03_idle_out_22.png">
+      <Filter>资源文件\enemy\tigerBeetle\idle</Filter>
+    </Image>
+    <Image Include="assets\enemies\tigerBeetle\idle\tiger_beetle_larva-03_idle_out_23.png">
+      <Filter>资源文件\enemy\tigerBeetle\idle</Filter>
+    </Image>
+    <Image Include="assets\enemies\tigerBeetle\idle\tiger_beetle_larva-03_idle_out_24.png">
+      <Filter>资源文件\enemy\tigerBeetle\idle</Filter>
+    </Image>
+    <Image Include="assets\enemies\tigerBeetle\idle\tiger_beetle_larva-03_idle_out_25.png">
+      <Filter>资源文件\enemy\tigerBeetle\idle</Filter>
+    </Image>
+    <Image Include="assets\enemies\tigerBeetle\idle\tiger_beetle_larva-03_idle_out_26.png">
+      <Filter>资源文件\enemy\tigerBeetle\idle</Filter>
+    </Image>
+    <Image Include="assets\enemies\tigerBeetle\idle\tiger_beetle_larva-03_idle_out_27.png">
+      <Filter>资源文件\enemy\tigerBeetle\idle</Filter>
+    </Image>
+    <Image Include="assets\enemies\tigerBeetle\idle\tiger_beetle_larva-03_idle_out_28.png">
+      <Filter>资源文件\enemy\tigerBeetle\idle</Filter>
+    </Image>
+    <Image Include="assets\enemies\tigerBeetle\idle\tiger_beetle_larva-03_idle_out_29.png">
+      <Filter>资源文件\enemy\tigerBeetle\idle</Filter>
+    </Image>
+    <Image Include="assets\enemies\tigerBeetle\get_hit\tiger_beetle_larva-05_get_hit_00.png">
+      <Filter>资源文件\enemy\tigerBeetle\get_hit</Filter>
+    </Image>
+    <Image Include="assets\enemies\tigerBeetle\get_hit\tiger_beetle_larva-05_get_hit_01.png">
+      <Filter>资源文件\enemy\tigerBeetle\get_hit</Filter>
+    </Image>
+    <Image Include="assets\enemies\tigerBeetle\get_hit\tiger_beetle_larva-05_get_hit_02.png">
+      <Filter>资源文件\enemy\tigerBeetle\get_hit</Filter>
+    </Image>
+    <Image Include="assets\enemies\tigerBeetle\get_hit\tiger_beetle_larva-05_get_hit_03.png">
+      <Filter>资源文件\enemy\tigerBeetle\get_hit</Filter>
+    </Image>
+    <Image Include="assets\enemies\tigerBeetle\get_hit\tiger_beetle_larva-05_get_hit_04.png">
+      <Filter>资源文件\enemy\tigerBeetle\get_hit</Filter>
+    </Image>
+    <Image Include="assets\enemies\tigerBeetle\get_hit\tiger_beetle_larva-05_get_hit_05.png">
+      <Filter>资源文件\enemy\tigerBeetle\get_hit</Filter>
+    </Image>
+    <Image Include="assets\enemies\tigerBeetle\get_hit\tiger_beetle_larva-05_get_hit_06.png">
+      <Filter>资源文件\enemy\tigerBeetle\get_hit</Filter>
+    </Image>
+    <Image Include="assets\enemies\tigerBeetle\get_hit\tiger_beetle_larva-05_get_hit_07.png">
+      <Filter>资源文件\enemy\tigerBeetle\get_hit</Filter>
+    </Image>
+    <Image Include="assets\enemies\tigerBeetle\get_hit\tiger_beetle_larva-05_get_hit_08.png">
+      <Filter>资源文件\enemy\tigerBeetle\get_hit</Filter>
+    </Image>
+    <Image Include="assets\enemies\tigerBeetle\get_hit\tiger_beetle_larva-05_get_hit_09.png">
+      <Filter>资源文件\enemy\tigerBeetle\get_hit</Filter>
+    </Image>
+    <Image Include="assets\enemies\tigerBeetle\get_hit\tiger_beetle_larva-05_get_hit_10.png">
+      <Filter>资源文件\enemy\tigerBeetle\get_hit</Filter>
+    </Image>
+    <Image Include="assets\character\Warrior\Individual Sprite\Hurt-Effect\hurt.png">
+      <Filter>资源文件\character\warrior</Filter>
+    </Image>
+    <Image Include="assets\character\Warrior\Individual Sprite\Death-Effect\die.png">
+      <Filter>资源文件\character\warrior</Filter>
+    </Image>
+    <Image Include="assets\enemies\undead\undead_attack_sheet.png">
+      <Filter>资源文件\enemy\undead</Filter>
+    </Image>
+    <Image Include="assets\enemies\undead\undead_death_sheet.png">
+      <Filter>资源文件\enemy\undead</Filter>
+    </Image>
+    <Image Include="assets\enemies\undead\undead_hurt_sheet.png">
+      <Filter>资源文件\enemy\undead</Filter>
+    </Image>
+    <Image Include="assets\enemies\undead\undead_idle_sheet.png">
+      <Filter>资源文件\enemy\undead</Filter>
+    </Image>
+    <Image Include="assets\enemies\undead\undead_walk_sheet.png">
+      <Filter>资源文件\enemy\undead</Filter>
+    </Image>
+    <Image Include="assets\enemies\skeleton\attack1.png">
+      <Filter>资源文件\enemy\skeleton</Filter>
+    </Image>
+    <Image Include="assets\enemies\skeleton\dead.png">
+      <Filter>资源文件\enemy\skeleton</Filter>
+    </Image>
+    <Image Include="assets\enemies\skeleton\hurt.png">
+      <Filter>资源文件\enemy\skeleton</Filter>
+    </Image>
+    <Image Include="assets\enemies\skeleton\idle.png">
+      <Filter>资源文件\enemy\skeleton</Filter>
+    </Image>
+    <Image Include="assets\enemies\skeleton\run.png">
+      <Filter>资源文件\enemy\skeleton</Filter>
+    </Image>
+    <Image Include="assets\enemies\skeleton\walk.png">
+      <Filter>资源文件\enemy\skeleton</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SDLtest.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\maps\map.tmx">
+      <Filter>资源文件\maps</Filter>
+    </None>
+    <None Include="assets\textures.tml">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="assets\animation.aml">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="assets\maps\longmap.tmx">
+      <Filter>资源文件\maps</Filter>
+    </None>
+  </ItemGroup>
+</Project>

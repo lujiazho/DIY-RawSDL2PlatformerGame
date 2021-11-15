@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{3554e482-b026-4e72-8a01-f65635991207}</ProjectGuid>
+    <RootNamespace>SDLtest</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Users\ASUS\Desktop\SDLtest\SDLtest\SDL-devel-1.2.15-VC\SDL2_image-2.0.5\include;E:\boost_1_77_0;C:\Users\ASUS\Desktop\SDLtest\SDLtest\SDL-devel-1.2.15-VC\SDL-1.2.15\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\ASUS\Desktop\SDLtest\SDLtest\SDL-devel-1.2.15-VC\SDL2_image-2.0.5\lib\x86;E:\boost_1_77_0\stage\lib;C:\Users\ASUS\Desktop\SDLtest\SDLtest\SDL-devel-1.2.15-VC\SDL-1.2.15\lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Enemy.cpp" />
+    <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="ObjectFactory.cpp" />
+    <ClCompile Include="Play.cpp" />
+    <ClCompile Include="SeqAnimation.cpp" />
+    <ClCompile Include="SpriteAnimation.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="CollisionHandler.cpp" />
+    <ClCompile Include="Engine.cpp" />
+    <ClCompile Include="Input.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="MapParser.cpp" />
+    <ClCompile Include="SpriteEnemy.cpp" />
+    <ClCompile Include="TextureManager.cpp" />
+    <ClCompile Include="TileLayer.cpp" />
+    <ClCompile Include="Timer.cpp" />
+    <ClCompile Include="Vendor\TinyXML\tinystr.cpp" />
+    <ClCompile Include="Vendor\TinyXML\tinyxml.cpp" />
+    <ClCompile Include="Vendor\TinyXML\tinyxmlerror.cpp" />
+    <ClCompile Include="Vendor\TinyXML\tinyxmlparser.cpp" />
+    <ClCompile Include="Warrior.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Animation.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="Collider.h" />
+    <ClInclude Include="CollisionHandler.h" />
+    <ClInclude Include="Condition.h" />
+    <ClInclude Include="Enemy.h" />
+    <ClInclude Include="Engine.h" />
+    <ClInclude Include="GameMap.h" />
+    <ClInclude Include="GameObject.h" />
+    <ClInclude Include="GameState.h" />
+    <ClInclude Include="Input.h" />
+    <ClInclude Include="IObject.h" />
+    <ClInclude Include="Layer.h" />
+    <ClInclude Include="MapParser.h" />
+    <ClInclude Include="Menu.h" />
+    <ClInclude Include="ObjectFactory.h" />
+    <ClInclude Include="Play.h" />
+    <ClInclude Include="Point.h" />
+    <ClInclude Include="RigidBody.h" />
+    <ClInclude Include="SeqAnimation.h" />
+    <ClInclude Include="SpriteAnimation.h" />
+    <ClInclude Include="SpriteEnemy.h" />
+    <ClInclude Include="TextureManager.h" />
+    <ClInclude Include="TileLayer.h" />
+    <ClInclude Include="Timer.h" />
+    <ClInclude Include="Transform.h" />
+    <ClInclude Include="Vector2D.h" />
+    <ClInclude Include="Character.h" />
+    <ClInclude Include="Vendor\TinyXML\tinystr.h" />
+    <ClInclude Include="Vendor\TinyXML\tinyxml.h" />
+    <ClInclude Include="Warrior.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="assets\bg1.jpg" />
+    <Image Include="assets\bg2.jpg" />
+    <Image Include="assets\bg_solid_colors.png" />
+    <Image Include="assets\character\Warrior\Individual Sprite\Attack\attack.png" />
+    <Image Include="assets\character\Warrior\Individual Sprite\Crouch\crouch.png" />
+    <Image Include="assets\character\Warrior\Individual Sprite\Death-Effect\die.png" />
+    <Image Include="assets\character\Warrior\Individual Sprite\Fall\fall.png" />
+    <Image Include="assets\character\Warrior\Individual Sprite\Hurt-Effect\hurt.png" />
+    <Image Include="assets\character\Warrior\Individual Sprite\idle\idle.png" />
+    <Image Include="assets\character\Warrior\Individual Sprite\Jump\jump.png" />
+    <Image Include="assets\character\Warrior\Individual Sprite\Run\run.png" />
+    <Image Include="assets\enemies\skeleton\attack1.png" />
+    <Image Include="assets\enemies\skeleton\dead.png" />
+    <Image Include="assets\enemies\skeleton\hurt.png" />
+    <Image Include="assets\enemies\skeleton\idle.png" />
+    <Image Include="assets\enemies\skeleton\run.png" />
+    <Image Include="assets\enemies\skeleton\walk.png" />
+    <Image Include="assets\enemies\tigerBeetle\attack\tiger_beetle_larva-04_attack_0.png" />
+    <Image Include="assets\enemies\tigerBeetle\attack\tiger_beetle_larva-04_attack_1.png" />
+    <Image Include="assets\enemies\tigerBeetle\attack\tiger_beetle_larva-04_attack_2.png" />
+    <Image Include="assets\enemies\tigerBeetle\attack\tiger_beetle_larva-04_attack_3.png" />
+    <Image Include="assets\enemies\tigerBeetle\attack\tiger_beetle_larva-04_attack_4.png" />
+    <Image Include="assets\enemies\tigerBeetle\attack\tiger_beetle_larva-04_attack_5.png" />
+    <Image Include="assets\enemies\tigerBeetle\attack\tiger_beetle_larva-04_attack_6.png" />
+    <Image Include="assets\enemies\tigerBeetle\attack\tiger_beetle_larva-04_attack_7.png" />
+    <Image Include="assets\enemies\tigerBeetle\attack\tiger_beetle_larva-04_attack_8.png" />
+    <Image Include="assets\enemies\tigerBeetle\die\tiger_beetle_larva-07_death_00.png" />
+    <Image Include="assets\enemies\tigerBeetle\die\tiger_beetle_larva-07_death_01.png" />
+    <Image Include="assets\enemies\tigerBeetle\die\tiger_beetle_larva-07_death_02.png" />
+    <Image Include="assets\enemies\tigerBeetle\die\tiger_beetle_larva-07_death_03.png" />
+    <Image Include="assets\enemies\tigerBeetle\die\tiger_beetle_larva-07_death_04.png" />
+    <Image Include="assets\enemies\tigerBeetle\die\tiger_beetle_larva-07_death_05.png" />
+    <Image Include="assets\enemies\tigerBeetle\die\tiger_beetle_larva-07_death_06.png" />
+    <Image Include="assets\enemies\tigerBeetle\die\tiger_beetle_larva-07_death_07.png" />
+    <Image Include="assets\enemies\tigerBeetle\die\tiger_beetle_larva-07_death_08.png" />
+    <Image Include="assets\enemies\tigerBeetle\die\tiger_beetle_larva-07_death_09.png" />
+    <Image Include="assets\enemies\tigerBeetle\die\tiger_beetle_larva-07_death_10.png" />
+    <Image Include="assets\enemies\tigerBeetle\emerge\tiger_beetle_larva-02_emerge_00.png" />
+    <Image Include="assets\enemies\tigerBeetle\emerge\tiger_beetle_larva-02_emerge_01.png" />
+    <Image Include="assets\enemies\tigerBeetle\emerge\tiger_beetle_larva-02_emerge_02.png" />
+    <Image Include="assets\enemies\tigerBeetle\emerge\tiger_beetle_larva-02_emerge_03.png" />
+    <Image Include="assets\enemies\tigerBeetle\emerge\tiger_beetle_larva-02_emerge_04.png" />
+    <Image Include="assets\enemies\tigerBeetle\emerge\tiger_beetle_larva-02_emerge_05.png" />
+    <Image Include="assets\enemies\tigerBeetle\emerge\tiger_beetle_larva-02_emerge_06.png" />
+    <Image Include="assets\enemies\tigerBeetle\emerge\tiger_beetle_larva-02_emerge_07.png" />
+    <Image Include="assets\enemies\tigerBeetle\emerge\tiger_beetle_larva-02_emerge_08.png" />
+    <Image Include="assets\enemies\tigerBeetle\emerge\tiger_beetle_larva-02_emerge_09.png" />
+    <Image Include="assets\enemies\tigerBeetle\emerge\tiger_beetle_larva-02_emerge_10.png" />
+    <Image Include="assets\enemies\tigerBeetle\get_hit\tiger_beetle_larva-05_get_hit_00.png" />
+    <Image Include="assets\enemies\tigerBeetle\get_hit\tiger_beetle_larva-05_get_hit_01.png" />
+    <Image Include="assets\enemies\tigerBeetle\get_hit\tiger_beetle_larva-05_get_hit_02.png" />
+    <Image Include="assets\enemies\tigerBeetle\get_hit\tiger_beetle_larva-05_get_hit_03.png" />
+    <Image Include="assets\enemies\tigerBeetle\get_hit\tiger_beetle_larva-05_get_hit_04.png" />
+    <Image Include="assets\enemies\tigerBeetle\get_hit\tiger_beetle_larva-05_get_hit_05.png" />
+    <Image Include="assets\enemies\tigerBeetle\get_hit\tiger_beetle_larva-05_get_hit_06.png" />
+    <Image Include="assets\enemies\tigerBeetle\get_hit\tiger_beetle_larva-05_get_hit_07.png" />
+    <Image Include="assets\enemies\tigerBeetle\get_hit\tiger_beetle_larva-05_get_hit_08.png" />
+    <Image Include="assets\enemies\tigerBeetle\get_hit\tiger_beetle_larva-05_get_hit_09.png" />
+    <Image Include="assets\enemies\tigerBeetle\get_hit\tiger_beetle_larva-05_get_hit_10.png" />
+    <Image Include="assets\enemies\tigerBeetle\idle\tiger_beetle_larva-03_idle_out_00.png" />
+    <Image Include="assets\enemies\tigerBeetle\idle\tiger_beetle_larva-03_idle_out_01.png" />
+    <Image Include="assets\enemies\tigerBeetle\idle\tiger_beetle_larva-03_idle_out_02.png" />
+    <Image Include="assets\enemies\tigerBeetle\idle\tiger_beetle_larva-03_idle_out_03.png" />
+    <Image Include="assets\enemies\tigerBeetle\idle\tiger_beetle_larva-03_idle_out_04.png" />
+    <Image Include="assets\enemies\tigerBeetle\idle\tiger_beetle_larva-03_idle_out_05.png" />
+    <Image Include="assets\enemies\tigerBeetle\idle\tiger_beetle_larva-03_idle_out_06.png" />
+    <Image Include="assets\enemies\tigerBeetle\idle\tiger_beetle_larva-03_idle_out_07.png" />
+    <Image Include="assets\enemies\tigerBeetle\idle\tiger_beetle_larva-03_idle_out_08.png" />
+    <Image Include="assets\enemies\tigerBeetle\idle\tiger_beetle_larva-03_idle_out_09.png" />
+    <Image Include="assets\enemies\tigerBeetle\idle\tiger_beetle_larva-03_idle_out_10.png" />
+    <Image Include="assets\enemies\tigerBeetle\idle\tiger_beetle_larva-03_idle_out_11.png" />
+    <Image Include="assets\enemies\tigerBeetle\idle\tiger_beetle_larva-03_idle_out_12.png" />
+    <Image Include="assets\enemies\tigerBeetle\idle\tiger_beetle_larva-03_idle_out_13.png" />
+    <Image Include="assets\enemies\tigerBeetle\idle\tiger_beetle_larva-03_idle_out_14.png" />
+    <Image Include="assets\enemies\tigerBeetle\idle\tiger_beetle_larva-03_idle_out_15.png" />
+    <Image Include="assets\enemies\tigerBeetle\idle\tiger_beetle_larva-03_idle_out_16.png" />
+    <Image Include="assets\enemies\tigerBeetle\idle\tiger_beetle_larva-03_idle_out_17.png" />
+    <Image Include="assets\enemies\tigerBeetle\idle\tiger_beetle_larva-03_idle_out_18.png" />
+    <Image Include="assets\enemies\tigerBeetle\idle\tiger_beetle_larva-03_idle_out_19.png" />
+    <Image Include="assets\enemies\tigerBeetle\idle\tiger_beetle_larva-03_idle_out_20.png" />
+    <Image Include="assets\enemies\tigerBeetle\idle\tiger_beetle_larva-03_idle_out_21.png" />
+    <Image Include="assets\enemies\tigerBeetle\idle\tiger_beetle_larva-03_idle_out_22.png" />
+    <Image Include="assets\enemies\tigerBeetle\idle\tiger_beetle_larva-03_idle_out_23.png" />
+    <Image Include="assets\enemies\tigerBeetle\idle\tiger_beetle_larva-03_idle_out_24.png" />
+    <Image Include="assets\enemies\tigerBeetle\idle\tiger_beetle_larva-03_idle_out_25.png" />
+    <Image Include="assets\enemies\tigerBeetle\idle\tiger_beetle_larva-03_idle_out_26.png" />
+    <Image Include="assets\enemies\tigerBeetle\idle\tiger_beetle_larva-03_idle_out_27.png" />
+    <Image Include="assets\enemies\tigerBeetle\idle\tiger_beetle_larva-03_idle_out_28.png" />
+    <Image Include="assets\enemies\tigerBeetle\idle\tiger_beetle_larva-03_idle_out_29.png" />
+    <Image Include="assets\enemies\undead\undead_attack_sheet.png" />
+    <Image Include="assets\enemies\undead\undead_death_sheet.png" />
+    <Image Include="assets\enemies\undead\undead_hurt_sheet.png" />
+    <Image Include="assets\enemies\undead\undead_idle_sheet.png" />
+    <Image Include="assets\enemies\undead\undead_walk_sheet.png" />
+    <Image Include="assets\Fall.png" />
+    <Image Include="assets\Idle.png" />
+    <Image Include="assets\Jump.png" />
+    <Image Include="assets\maps\ground.png" />
+    <Image Include="assets\maps\plants.png" />
+    <Image Include="assets\maps\tree.png" />
+    <Image Include="assets\NightBorne.png" />
+    <Image Include="assets\Run.png" />
+    <Image Include="assets\tree.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SDLtest.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\animation.aml" />
+    <None Include="assets\maps\longmap.tmx" />
+    <None Include="assets\maps\map.tmx" />
+    <None Include="assets\textures.tml" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
